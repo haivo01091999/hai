@@ -9,7 +9,7 @@ try:
                         data = ser.readline()           #Doc vao data
                         print(data)                     #In ra man hinh
                 else:                                   #Nguoc lai
-                        string=input('What do you want to send? ')  #Xuat ra man hinh va doc string
+                        string=input('What do you want to send? ')  #neu la python 3 thi dung input, python 2.X thi dung raw_input
                         string=string+"\r"                          #Cong them ki tu \r
                         ser.write(string.encode())                  #Encode va xuat ra arduino
                         sleep(0.5)                                  #Dung 0.5s
