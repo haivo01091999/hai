@@ -10,7 +10,7 @@ try:
 						print(data)
 					else:
 						string = input('what do you send?')
-						string = string + "\r"
+						#string = string + "\r"
 						ser.write(string.encode()) #chuyen ve unicode va dua ra cho arrduino
 						sleep(0.5)
 except KeyboardInterrupt:
