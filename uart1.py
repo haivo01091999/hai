@@ -5,7 +5,7 @@ ser = serial.Serial('/dev/ttyACM0',9600) #mo cong serial voi baudrate 9600
 
 try:
 			while(true):
-					if (ser.in_waiting >0)  #neu cos tin hieu tu arduino
+					if (ser.in_waiting >0):  #neu cos tin hieu tu arduino
 						data=ser.readline() #doc vao data
 						print(data)
 					else
